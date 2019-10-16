@@ -70,5 +70,5 @@ def callbacks(patience):
 #   model = the model you want to save
 #   model_name = what you want to name the saved model
 def save_model(model, model_name):
-    model.save_weights(model_name + "_weights.h5")
-    model.save(model_name + ".h5")
+    model.save_weights("models/" + model_name + "_weights.hdf5")
+    model.save("models/" + model_name + ".hdf5")
